@@ -89,15 +89,19 @@ public class Solution_2 {
         return  answer[0];
     }
 
-}
 
 
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
     }
+
 }
+
+
+
+
 
