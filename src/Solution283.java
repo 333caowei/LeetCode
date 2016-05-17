@@ -14,6 +14,9 @@ public class Solution283 {
 
     }
 
+    /**
+     *我的方法,效率很低
+     */
     public void moveZeroes(int[] nums) {
         int count=0;
         for(int i=0; ; ){
@@ -36,6 +39,28 @@ public class Solution283 {
             if(count+i>=nums.length){
                 break;
             }
+        }
+
+        System.out.print(Arrays.toString(nums));
+    }
+
+
+
+    /**
+     *别人的方法
+     */
+    public void moveZeroes2(int[] nums) {
+
+        int index=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
+                nums[index] = nums[i];
+                index++;
+            }
+        }
+
+        for(int i=index;i<nums.length;i++){
+            nums[i]=0;
         }
 
         System.out.print(Arrays.toString(nums));
