@@ -11,7 +11,11 @@ public class Solution171 {
         System.out.print(column);
     }
 
-    
+
+    /**
+     *
+     * 找规律,+=26的字母bit位置次方,再乘以字母在26中的index
+     */
     public int titleToNumber(String s) {
         char alphabet[] = s.toCharArray();
         int sum=0;
