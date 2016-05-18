@@ -6,7 +6,7 @@ public class Solution171 {
     public static void main(String args[]){
         Solution171 solution171 = new Solution171();
 
-        String s = "AAA";
+        String s = "ZZ";
         int column = solution171.titleToNumber(s);
         System.out.print(column);
     }
